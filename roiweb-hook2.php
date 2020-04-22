@@ -21,6 +21,14 @@ function rwch2_global_css(){
 		wp_enqueue_style( 'custom-global-css',
 		plugins_url('assets/css/custom-global.css', __FILE__ ),
 		array(),'1.0');
+		//Main JS
+		wp_enqueue_style( 'main-global-js',
+		plugins_url('assets/js/main-global.js', __FILE__ ),
+		array(),'1.0');
+		//Custom CSS
+		wp_enqueue_style( 'custom-global-js',
+		plugins_url('assets/js/custom-global.js', __FILE__ ),
+		array(),'1.0');
 	}
 	if(!is_admin() && wp_is_mobile()){		
 		//Mobile CSS
