@@ -22,11 +22,11 @@ function rwch2_global_css(){
 		plugins_url('assets/css/custom-global.css', __FILE__ ),
 		array(),'1.0');
 		//Main JS
-		wp_enqueue_style( 'main-global-js',
+		wp_enqueue_script( 'main-global-js',
 		plugins_url('assets/js/main-global.js', __FILE__ ),
 		array(),'1.0');
-		//Custom CSS
-		wp_enqueue_style( 'custom-global-js',
+		//Custom JS
+		wp_enqueue_script( 'custom-global-js',
 		plugins_url('assets/js/custom-global.js', __FILE__ ),
 		array(),'1.0');
 	}
